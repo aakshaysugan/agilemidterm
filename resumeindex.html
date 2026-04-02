@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Professional Resume</title>
+    <style>
+        /* Basic Reset */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f9;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+
+        header h1 { font-size: 2.5rem; color: #2c3e50; }
+        header p { color: #7f8c8d; font-style: italic; }
+
+        .contact-info {
+            margin-top: 10px;
+            font-size: 0.9rem;
+        }
+
+        section { margin-bottom: 25px; }
+
+        h2 {
+            border-left: 5px solid #3498db;
+            padding-left: 10px;
+            margin-bottom: 15px;
+            color: #2c3e50;
+            text-transform: uppercase;
+            font-size: 1.2rem;
+        }
+
+        .job, .edu {
+            margin-bottom: 15px;
+        }
+
+        .job-title, .school-name {
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .date { color: #3498db; font-size: 0.9rem; }
+
+        ul { margin-left: 20px; }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            list-style: none;
+            margin-left: 0;
+        }
+
+        .skills-list li {
+            background: #3498db;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+        }
+
+        @media (max-width: 600px) {
+            .job-title { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Alex Rivera</h1>
+            <p>Full Stack Web Developer</p>
+            <div class="contact-info">
+                Email: alex.rivera@email.com | Phone: (555) 123-4567 | 
+                <a href="#">LinkedIn</a> | <a href="#">GitHub</a>
+            </div>
+        </header>
+
+        <section id="summary">
+            <h2>Professional Summary</h2>
+            <p>Innovative Web Developer with 3+ years of experience in building high-performance web applications. Passionate about clean code, user experience, and solving complex problems with elegant solutions.</p>
+        </section>
+
+        <section id="experience">
+            <h2>Experience</h2>
+            
+            <div class="job">
+                <div class="job-title">
+                    <span>Senior Developer @ TechFlow Solutions</span>
+                    <span class="date">2023 - Present</span>
+                </div>
+                <ul>
+                    <li>Led a team of 4 to rebuild the flagship e-commerce platform, increasing load speed by 40%.</li>
+                    <li>Implemented automated testing, reducing production bugs by 15%.</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <div class="job-title">
+                    <span>Junior Developer @ Creative Web Agency</span>
+                    <span class="date">2021 - 2023</span>
+                </div>
+                <ul>
+                    <li>Developed responsive front-end components using HTML5, CSS3, and JavaScript.</li>
+                    <li>Collaborated with designers to ensure high-fidelity UI/UX implementation.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <ul class="skills-list">
+                <li>HTML5 & CSS3</li>
+                <li>JavaScript (ES6+)</li>
+                <li>React.js</li>
+                <li>Node.js</li>
+                <li>Python</li>
+                <li>SQL / MongoDB</li>
+                <li>Git & GitHub</li>
+            </ul>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <div class="edu">
+                <div class="school-name">
+                    <span>BS in Computer Science - University of Technology</span>
+                    <span class="date">2017 - 2021</span>
+                </div>
+                <p>Graduated with Honors (GPA: 3.8/4.0)</p>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>
